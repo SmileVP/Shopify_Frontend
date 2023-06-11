@@ -16,7 +16,7 @@ function ResetPassword() {
   const tokenValidation = async () => {
     try {
       let res = await axios.get(
-        `${url}/customer/reset-password/${id}/${token}`
+        `${url}/admin-reset-password/${id}/${token}`
       );
       console.log(res);
       if (res.status === 200) {
@@ -54,7 +54,7 @@ function ResetPassword() {
   //function for save new password
   const handleNewPassword = async (values) => {
     try {
-      let res = await axios.post(`${url}/customer/change-password/${id}`, {
+      let res = await axios.post(`${url}/admin-change-password/${id}`, {
         password: values.password,
       });
 
