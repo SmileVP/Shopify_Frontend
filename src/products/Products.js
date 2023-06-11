@@ -40,7 +40,6 @@ function Products() {
 
   //function for addToCart send product details store data in addToCart redux storage
   const handleAddToCart = ({ e }) => {
-    console.log(e);
     dispatch(
       addToCart({
         e,
@@ -140,4 +139,3 @@ function Products() {
 }
 
 export default Products;
-                                                                                

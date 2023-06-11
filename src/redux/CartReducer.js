@@ -13,7 +13,7 @@ const CartReducer = createSlice({
   reducers: {
     addToCart(state, action) {
       let tempCart = state.cartItems.filter(
-       (item) => item.e._id === action.payload.e._id
+        (item) => item.e._id === action.payload.e._id
       );
 
       if (tempCart < 1) {

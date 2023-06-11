@@ -18,7 +18,6 @@ function Login() {
 
   //function for admin login
   let handleLogin = async (values) => {
-    console.log(values);
     try {
       let res = await axios.post(`${url}/adminLogin`, {
         email: values.email,

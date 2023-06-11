@@ -50,38 +50,36 @@ function OrderedItems() {
         </Button>
       </div>
 
-      <div>
-        <Table bordered className="mt-2 text-center ">
-          <thead className="text-danger">
-            <tr>
-              <th>S.No</th>
-              <th>Products</th>
-              <th>Quantity</th>
-              <th>Price</th>
-              <th>Total</th>
-              <th>Status</th>
-              <th>Ordered on</th>
-            </tr>
-          </thead>
-          <tbody className="text-white">
-            {item.map((e, i) => {
-              if (e !== []) {
-                return (
-                  <tr key={i}>
-                    <td>{i + 1}</td>
-                    <td>{e.products}</td>
-                    <td>{e.qty}</td>
-                    <td>{e.price}</td>
-                    <td>{e.total_amount}/-</td>
-                    <td>{e.status}</td>
-                    <td>{new Date(e.createdAt).toLocaleDateString("en-UK")}</td>
-                  </tr>
-                );
-              }
-            })}
-          </tbody>
-        </Table>
-      </div>
+      <Table bordered className="mt-2 text-center ">
+        <thead className="text-danger">
+          <tr>
+            <th>S.No</th>
+            <th>Products</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Ordered on</th>
+          </tr>
+        </thead>
+        <tbody className="text-white">
+          {item.map((e, i) => {
+            if (e !== []) {
+              return (
+                <tr key={i}>
+                  <td>{i + 1}</td>
+                  <td>{e.products}</td>
+                  <td>{e.qty}</td>
+                  <td>{e.price}</td>
+                  <td>{e.total_amount}/-</td>
+                  <td>{e.status}</td>
+                  <td>{new Date(e.createdAt).toLocaleDateString("en-UK")}</td>
+                </tr>
+              );
+            }
+          })}
+        </tbody>
+      </Table>
     </div>
   );
 }

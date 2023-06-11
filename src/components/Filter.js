@@ -22,8 +22,7 @@ function Filter() {
     let filteredCategory;
     try {
       const res = await axios.get(`${url}/product/product-details`);
-      console.log(res);
-
+     
       if (category === "All") {
         dispatch(filterItems(res.data.products));
       }

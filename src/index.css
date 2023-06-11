@@ -374,6 +374,7 @@ button.navbar-toggler.collapsed {
   background-position: fixed;
   width: 100%;
   height: 100vh;
+  overflow: scroll;
 }
 
 .your-orders-title {
@@ -412,9 +413,10 @@ button.navbar-toggler.collapsed {
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
+  overflow: scroll;
 }
 
-/* .all-orders {
+.all-orders {
   background-image: url("../src/Asset/abstract-uv-ultraviolet-light-composition.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -422,7 +424,8 @@ button.navbar-toggler.collapsed {
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
-} */
+  overflow: scroll;
+}
 .reset-form {
   width: 450px;
   height: 300px;
