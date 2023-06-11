@@ -8,7 +8,7 @@ import { Button } from "react-bootstrap";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
-function ResetPassword() {
+function AdminResetPassword() {
   const { id, token } = useParams();
   const navigate = useNavigate();
 
@@ -143,4 +143,4 @@ function ResetPassword() {
   );
 }
 
-export default ResetPassword;
+export default AdminResetPassword;
