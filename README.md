@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+Shopify-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Techonologies used: React,React-Router-Dom,Formik,Yup,Axios,React-toastify,
+                    React Hooks,Redux,React-bootstrap
 
-## Available Scripts
+Credentials: You can signup or use the given credentials
+             customer: email:smilewithvishnu@gmail.com 
+                       pass:Vishnu@123
+             admin: email:ajeethkumar.gopal@gmail.com
+                    pass:Ajee@123
 
-In the project directory, you can run:
+Deploy link: https://celebrated-liger-a9b72b.netlify.app
 
-### `npm start`
+01. I have created the frontend using React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+02. In public folder,index.html is where I have given the title and favicon
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+03. I have created components so that I can reuse my code functionalities.
 
-### `npm test`
+04. App.js file is where I have made use of react-router-dom and specified my routings and also here
+    I am exporting my backend deployed url to integrate with my backend API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+05. In Dashboard.js I am calling my Navigation,Home,About and Contact Functional Components so that it will be
+    rendered in my web page.
 
-### `npm run build`
+06. Inside the components folder, I have created a CustomerSignUp.js,CustomerLogin.js,ForgotPassword.js 
+    in which I have used formik and yupto create validations for the sign up form,login form 
+    and forgot password form and also made use of events such as onclick
+    (Ex:When I click the login button it will navigate to login page using the use navigate hooks),
+    using axios I am giving the backend deployed url along with its specified end points as parameter 
+    to perform the operation and integrate with the backend api.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+07. In filter.js, I have written the code logic to filter the product based on category so that it displays
+    a dropdown from which you can choose the category (ex:jewellery,laptop,furniture,etc...)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+08. I have made use of redux so that it provides me multiple state management and store all my application
+    state in one place and I have provided the store access to the App functional component as you can see 
+    in the index.js and you can update the state of the components by just using use dispatch so that it calls
+    reducer function (ex:productreducer,cartreducer) so based on the action type you can update the state 
+    and use selector hook gives you the state of the entire application.
 
-### `npm run eject`
+09. Index.css is where I have specified all my stylings to the web application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+10. I have used react-toastify in app.js so that it gives me toaster for 3 sec as notification
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+11. In Products folder, I have created the functional components for cart details,
+    Ordered Items,Product list,Success order and product navigation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+12. In Admin folder, I have created functional components for AdminSignUp,AdminLogin,ResetPassword,
+    Forgot password,Add products, Admin home, Admin Navigation, All Orders,All Products and Order status
