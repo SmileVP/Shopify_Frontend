@@ -4,8 +4,8 @@ Techonologies used: React,React-Router-Dom,Formik,Yup,Axios,React-toastify,
                     React Hooks,Redux,React-bootstrap
 
 Credentials: You can signup or use the given credentials
- 01.customer: email:smilewithvishnu@gmail.com pass:Vishnu@123
- 02.admin: email:ajeethkumar.gopal@gmail.com  pass:Ajee@123
+ 01.customer: email:smilewithvishnu@gmail.com pass:Vishnu@123;
+ 02.admin: email:ajeethkumar.gopal@gmail.com  pass:Ajee@123;
 
 Deploy link: https://celebrated-liger-a9b72b.netlify.app
 
